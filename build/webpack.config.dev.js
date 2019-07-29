@@ -54,15 +54,7 @@ const devWebpackConfig = merge(BaseConfig, {
         minifyJS: true,
         minifyCSS: true,
         minifyURLs: true
-      },
-      scripts: [
-        {
-          src: '/static/lib/systemjs.js'
-        },
-        {
-          src: '/static/config/index.js'
-        }
-      ]
+      }
     })
   ]
 })
