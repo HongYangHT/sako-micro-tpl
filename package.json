@@ -18,7 +18,8 @@
     "prePushConCurrently": "concurrently \"npm:eslint\" \"npm:stylelint\" \"npm:predeploy\"",
     "micro:dev": "cross-env NODE_ENV=development webpack-dev-server --hot --color --progress --config build/webpack.config.micro.dev.js",
     "server:micro": "npm-run-all micro openServer",
-    "micro": "cross-env NODE_ENV=production webpack --config build/webpack.config.micro.js"
+    "micro": "cross-env NODE_ENV=production webpack --config build/webpack.config.micro.js",
+    "analyzer:micro": "cross-env NODE_ENV=production webpack --config build/webpack.config.micro.analyzer.js"
   },
   "repository": {
     "type": "git",

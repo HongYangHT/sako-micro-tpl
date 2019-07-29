@@ -1,15 +1,15 @@
 <template>
   <div class="container container-crm">
     <!-- <video-player ref="player" :params="videoOptions" /> -->
-    <a-button type="primary" class="mt-1" @click="$_onNav">跳转</a-button>
+    <i-button type="primary" class="mt-1" @click="$_onNav">跳转</i-button>
     <p>{{ $t('t.code') }}</p>
     <p>{{ currentApp }}</p>
-    <a-button type="primary" class="mt-1" @click="$_onNavSSO">跳转SSO</a-button>
+    <i-button type="primary" class="mt-1" @click="$_onNavSSO">跳转SSO</i-button>
   </div>
 </template>
 
 <script>
-import { Button } from 'ant-design-vue'
+import { Button } from 'iview'
 import { mapActions, mapState } from 'vuex'
 import PackageJson from '../../package.json'
 

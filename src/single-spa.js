@@ -5,6 +5,7 @@ import router from "./router";
 import store from "./store";
 import { sync } from "vuex-router-sync";
 import singleSpaVue from "@/micro"
+import PackageJson from '../package.json'
 // NOTE: 采取懒加载的模式
 // import Antd from "ant-design-vue"
 // import 'ant-design-vue/dist/antd.css'

@@ -1,4 +1,4 @@
-import { omit } from 'lodash'
+import { omit } from 'lodash/omit'
 const defaultOpts = {
   // required opts
   Vue: null,

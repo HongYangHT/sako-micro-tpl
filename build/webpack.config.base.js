@@ -37,7 +37,17 @@ module.exports = merge(
       extensions: ['.js', '.vue', '.jsx', '.json', '.css', '.scss', '.sass'],
       alias: {
         '@': resolve(__dirname, '../src'),
-        vue$: devMode ? 'vue/dist/vue.esm.js' : 'vue/dist/vue.min.js'
+        vue$: devMode ? 'vue/dist/vue.esm.js' : 'vue/dist/vue.min.js',
+        moment: 'moment',
+        lodash: 'lodash',
+        vuex: 'vuex',
+        'vue-router': 'vue-router'
+        // '@ant-design/icons/lib/dist$': resolve(__dirname, './config/ant-icon.js')
+        // 'video.js': 'video.js/dist/video.min.js'
+        // NOTE: 设置ant的图标
+        // react: 'react',
+        // 'react-router': 'react-router',
+        // redux: 'redux'
       }
     },
     plugins: [
