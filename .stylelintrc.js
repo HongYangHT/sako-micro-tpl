@@ -31,7 +31,7 @@ module.exports = {
       }
     ],
     "number-leading-zero": null,
-    "unit-whitelist": ["em", "rem", "%", "s", "px", "vh", "vw"]
+    "unit-whitelist": ["em", "rem", "%", "s", "px", "vh", "vw", "deg"]
   },
   plugins: [ 'stylelint-scss' ]
 };
