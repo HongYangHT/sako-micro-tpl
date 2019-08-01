@@ -24,7 +24,7 @@ module.exports = [
         options: {
           ident: 'postcss',
           sourceMap: true,
-          plugins: loader => [
+          plugins: () => [
             // 可以配置多个插件
             require('autoprefixer')({
               overrideBrowserslist: [
@@ -42,7 +42,9 @@ module.exports = [
                   return
                 rule.selectors = rule.selectors.map(
                   s =>
-                    `${/^.ivu/.test(s) ? '' : '.' + packageJson.name + ' '}${s === 'body' ? '' : s}`
+                    `${/^.ivu-tooltip-popper/.test(s) ? '' : '.' + packageJson.name + ' '}${
+                      s === 'body' ? '' : s
+                    }`
                 )
               })
             )
